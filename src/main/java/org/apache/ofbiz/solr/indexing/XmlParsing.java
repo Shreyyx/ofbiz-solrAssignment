@@ -227,9 +227,9 @@ public class XmlParsing {
                         String lang = ext.getOrDefault("LanguageCode", "");
                         String text = ext.getOrDefault("ExtendedProductInformation", "");
                         if (!text.isEmpty()) {
-                            if (extText.length() > 0) extText.append("; ");
-                            extText.append(expiCode).append(" (").append(lang).append("): ").append(text);
-                        }
+                                if (extText.length() > 0) extText.append("; ");
+                                extText.append(expiCode).append(" - ").append(text);
+                            }
                     }
                 } else {
                     Debug.logWarning("No extendedInformation found for PartNumber " + partNumber, MODULE);

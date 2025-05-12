@@ -153,10 +153,14 @@
     <field name="mimeTypeId" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="objectInfo" type="string" indexed="true" stored="true" multiValued="false"/>
     <field name="idCode" type="string" indexed="true" stored="true"/>
-<!--    <field name="description.productFeatureTypeId" type="string" indexed="true" stored="true"/>-->
-<!--    <field name="description" type="string" indexed="true" multiValued="true" stored="true"/>-->
     <dynamicField name="*" type="text_general" multiValued="true" indexed="true" stored="true"/>
     <field name="type" type="string" indexed="true" stored="true"/>
+
+    <field name="brandAAIAID" type="strings" indexed="true" stored="true" multiValued="true" />
+    <field name="brandLabel" type="strings" indexed="true" stored="true" multiValued="true" />
+    <field name="subBrandAAIAID" type="strings" indexed="true" stored="true" multiValued="true" />
+    <field name="subBrandLabel" type="strings" indexed="true" stored="true" multiValued="true" />
+    <field name="partTerminologyID" type="strings" indexed="true" stored="true" multiValued="true" />
 
 
     <!--   <field name="sku" type="text_general" indexed="true" stored="true"/>-->
